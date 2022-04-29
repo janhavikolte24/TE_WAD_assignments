@@ -1,0 +1,43 @@
+body {
+  width: 100vw;
+}
+
+.header {
+  flex-direction: column;
+}
+.logo {
+  height: 4rem;
+  width: 10rem;
+}
+.carousel {
+  height: 350px;
+}
+img {
+  height: 350px;
+}
+.drop {
+  height: 150px;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+}
+.cards {
+  flex-direction: column;
+  padding: 0;
+  height: 30rem;
+  justify-content: space-evenly;
+}
+
+.card {
+  height: 10rem;
+  width: 16rem;
+}
+.stack {
+  flex-direction: column;
+  padding: 0;
+}
+.navbar-bottom {
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}

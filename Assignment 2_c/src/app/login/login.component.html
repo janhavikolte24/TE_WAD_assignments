@@ -1,0 +1,38 @@
+<div class="outer-container">
+  <div class="upper-container">
+    <form class="form-example">
+      <div class="form-example">
+        <label for="name">Enter your username: </label>
+        <input #username type="text" name="username" id="username" required />
+      </div>
+      <div class="form-example">
+        <label for="email">Enter your password: </label>
+        <input
+          #password
+          type="password"
+          name="password"
+          id="password"
+          required
+        />
+      </div>
+      <div class="form-example">
+        <button (click)="addUser(username.value, password.value)" type="button">
+          Sign in
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <div class="lower-container">
+    <ul style="list-style: none">
+      <li *ngFor="let user of users">
+        <div class="User">
+          <h3>{{ user.username }}</h3>
+          <button (click)="removeUser(user)" type="button" style="height: 0.2%">
+            Remove
+          </button>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

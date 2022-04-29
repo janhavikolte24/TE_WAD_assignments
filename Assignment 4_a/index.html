@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sample Code</title>
+    <link
+      rel="stylesheet"
+      href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css"
+    />
+    <script src="js/script.js"></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+  </head>
+  <body>
+    <!-- Start of welcome page -->
+    <div id="welcome" data-role="page">
+      <div data-role="header">
+        <h1>Convert Kms to Miles</h1>
+        <div data-role="navbar" class="ui-body-c">
+          <ul>
+            <li>
+              <a href="#" class="ui-btn-active ui-state-persist">KM to Miles</a>
+            </li>
+            <li><a href="#first">Miles to KM</a></li>
+          </ul>
+        </div>
+      </div>
+      <div data-role="content">
+        <center>
+          <form style="width: 50%">
+            <label for="fname"><h1>Enter in kilometer :</h1></label>
+            <input type="text" name="name" id="km" placeholder="Km" />
+            <button
+              type="button"
+              onclick="kmToMiles()"
+              class="ui-btn ui-btn-mini ui-btn-b ui-btn-inline ui-corner-all"
+            >
+              Convert
+            </button>
+          </form>
+          <h1>In miles :</h1>
+          <p id="miles"></p>
+        </center>
+      </div>
+      <div data-role="footer" data-position="fixed">
+        <h3>Copyright All Rights Reserved</h3>
+      </div>
+    </div>
+    <!-- Start of first page -->
+    <div id="first" data-role="page">
+      <div data-role="header">
+        <h1>Convert Miles to Kms</h1>
+        <div data-role="navbar" class="ui-body-c">
+          <ul>
+            <li><a href="#welcome">KM to Miles </a></li>
+            <li>
+              <a href="#" class="ui-btn-active ui-state-persist">Miles to KM</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div data-role="content">
+        <center>
+          <form style="width: 50%">
+            <label for="fname"><h1>Enter in miles :</h1></label>
+            <input type="text" name="name" id="miles1" placeholder="Miles" />
+            <button
+              type="button"
+              onclick="milesToKm()"
+              class="ui-btn ui-btn-mini ui-btn-b ui-btn-inline ui-corner-all"
+            >
+              Convert
+            </button>
+          </form>
+          <h1>In Kilometers :</h1>
+          <p id="km1"></p>
+        </center>
+      </div>
+      <div data-role="footer" data-theme="a" data-position="fixed">
+        <h3>Copyright All Rights Reserved</h3>
+      </div>
+    </div>
+  </body>
+</html>
